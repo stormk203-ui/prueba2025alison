@@ -3,7 +3,6 @@ from odoo import models, fields
 class BibliotecaLibro(models.Model):
     _name = 'biblioteca.libro'
     _description = 'Libro de la biblioteca'
-
     name = fields.Char(string='Título', required=True)
-    autor = fields.Char(string='Autor', default='Marcos')
+    autor = fields.Char(string='Autor', default='Sergio')
     fecha = fields.Date(string='Fecha de publicación')
